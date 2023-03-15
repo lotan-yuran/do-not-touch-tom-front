@@ -1,6 +1,5 @@
 import { hot } from "react-hot-loader/root";
 
-import React from "react";
 import MuiTheme from "./MuiTheme";
 import style from "./app.module.scss";
 import history from "./router/history";

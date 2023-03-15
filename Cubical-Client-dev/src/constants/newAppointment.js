@@ -81,13 +81,13 @@ export const buttons = [
     index: orderFor.me,
     label: "בשבילי",
     image: <OrderForMe />
-  },
-  {
-    id: COMPONENT_IDS.CUSTOMER.BUTTONS.ORDER_FOR_SOMEONE_ELSE,
-    index: orderFor.someoneElse,
-    label: "מישהו אחר",
-    image: <OrderForSomeone />
   }
+  // {
+  //   id: COMPONENT_IDS.CUSTOMER.BUTTONS.ORDER_FOR_SOMEONE_ELSE,
+  //   index: orderFor.someoneElse,
+  //   label: "מישהו אחר",
+  //   image: <OrderForSomeone />
+  // }
 ];
 
 export const ID_MAX_LENGTH = 9;
