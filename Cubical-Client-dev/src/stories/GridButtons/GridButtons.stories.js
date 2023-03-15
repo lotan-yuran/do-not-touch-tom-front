@@ -1,7 +1,7 @@
 import { GridButtons } from "./GridButtons";
 
 export default {
-  title: "Cubical/GridButtons",
+  title: "Tom/GridButtons",
   component: GridButtons,
   argTypes: {
     color: { control: "color" },
@@ -25,7 +25,7 @@ SpecialColor.args = {
   color: "rgba(95,94,94,1)",
   backgroundColor: "rgb(243,255,255)",
   backgroundColorClicked: "rgb(128,220,202)",
-  arrayItems: [...Array(20).keys()].map(() => "AAAA"),
+  arrayItems: [...Array(20).keys()].map(() => "AAAA")
 };
 
 export const Skeleton = Template.bind({});
@@ -34,5 +34,5 @@ Skeleton.args = {
   outline: false,
   lengthLabelSkeleton: 3,
   isDisplaySkeleton: true,
-  arrayItems: [...Array(20).keys()],
+  arrayItems: [...Array(20).keys()]
 };

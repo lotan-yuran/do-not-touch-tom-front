@@ -1,7 +1,7 @@
 import { DropList } from "./DropList";
 
 export default {
-  title: "Cubical/DropList",
+  title: "Tom/DropList",
   component: DropList,
   argTypes: {
     color: { control: "color" },
@@ -15,7 +15,7 @@ const options = [
   { id: 1, name: "dev" },
   { id: 2, name: "test" },
   { id: 3, name: "prod" }
-]
+];
 
 export const Default = Template.bind({});
 Default.args = {
@@ -41,7 +41,7 @@ export const Small = Template.bind({});
 Small.args = {
   options,
   size: "small",
-  outline: true,
+  outline: true
 };
 
 export const FullWidth = Template.bind({});

@@ -1,7 +1,7 @@
 import { Banner } from "./Banner";
 
 export default {
-  title: "Cubical/Banner",
+  title: "Tom/Banner",
   component: Banner,
   argTypes: {
     color: { control: "color" },

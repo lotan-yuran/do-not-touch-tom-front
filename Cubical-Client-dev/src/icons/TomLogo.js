@@ -1,6 +1,6 @@
 import { SvgIcon } from "@material-ui/core";
 
-const CubicalLogo = props => {
+const TomLogo = props => {
   return (
     <SvgIcon width="212" height="212" viewBox="0 0 212 212" fill="none" {...props}>
       <rect width="212" height="212" rx="51.0843" fill="url(#paint0_linear_30_85)" />
@@ -69,4 +69,4 @@ const CubicalLogo = props => {
   );
 };
 
-export default CubicalLogo;
+export default TomLogo;

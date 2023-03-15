@@ -3,7 +3,7 @@ import { Dialog } from "./Dialog";
 import { PositionsAreOccupiedImg } from "../../imgSvg/PositionsAreOccupiedImg/PositionsAreOccupiedImg";
 
 export default {
-  title: "Cubical/Dialog",
+  title: "Tom/Dialog",
   component: Dialog
 };
 

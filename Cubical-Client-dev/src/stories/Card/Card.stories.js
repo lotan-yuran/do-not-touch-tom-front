@@ -1,6 +1,6 @@
 import { Card } from "./Card";
 export default {
-  title: "Cubical/Card",
+  title: "Tom/Card",
   component: Card,
   argTypes: {
     widthPercent: {

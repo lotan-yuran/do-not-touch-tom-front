@@ -33,7 +33,7 @@ const LoginPage = () => {
 
   return (
     <div className={style["login-page"]}>
-      <div className={style["title"]}>Cubical IDF</div>
+      <div className={style["title"]}>Tom</div>
       <div className={classNames(style["title"], style["subtitle"])}>התחברות</div>
       <Login />
       <div className={style["input-label"]}>מספר תעודת הזהות שלי:</div>

@@ -1,7 +1,7 @@
 import { Input } from "./Input";
 
 export default {
-  title: "Cubical/Input",
+  title: "Tom/Input",
   component: Input,
   argTypes: {
     backgroundColor: { control: "color" },
@@ -32,7 +32,7 @@ Filled.args = {
 export const Disabled = Template.bind({});
 Disabled.args = {
   label: "Disabled",
-  disabled: true,
+  disabled: true
 };
 
 export const MaxLength = Template.bind({});

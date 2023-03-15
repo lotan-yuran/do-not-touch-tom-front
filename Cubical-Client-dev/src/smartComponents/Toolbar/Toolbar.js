@@ -1,8 +1,8 @@
+import TomLogo from "../../icons/TomLogo";
 import styles from "./toolbar.module.scss";
 import { useState, useEffect } from "react";
 import { admin } from "../../styles/colors";
 import { InfoUser } from "../InfoUser/InfoUser";
-import CubicalLogo from "../../icons/CubicalLogo";
 import { ArrowDropDown } from "@material-ui/icons";
 import { useCodes } from "../../context/codesContext";
 import { ArrowLeft } from "../../icons/ArrowLeft/ArrowLeft";
@@ -101,7 +101,7 @@ export const Toolbar = ({
     <>
       <div className={styles["toolbar"]}>
         <div className={styles["logo"]}>
-          <CubicalLogo fontSize="inherit" />
+          <TomLogo fontSize="inherit" />
         </div>
 
         {complexes && (

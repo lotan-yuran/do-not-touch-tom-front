@@ -1,7 +1,7 @@
 import { Button } from "./Button";
 
 export default {
-  title: "Cubical/Button",
+  title: "Tom/Button",
   component: Button,
   argTypes: {
     color: { control: "color" },
@@ -10,7 +10,7 @@ export default {
   }
 };
 
-const Template = args => <Button {...args}/>;
+const Template = args => <Button {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
@@ -20,7 +20,7 @@ Default.args = {
 
 export const Large = Template.bind({});
 Large.args = {
-  size: 'large',
+  size: "large",
   outline: true,
   children: "Button",
   backgroundColor: "rgba(0,0,0,0)"
@@ -28,7 +28,7 @@ Large.args = {
 
 export const Small = Template.bind({});
 Small.args = {
-  size: 'small',
+  size: "small",
   outline: true,
   children: "Button",
   backgroundColor: "rgba(0,0,0,0)"
@@ -36,7 +36,7 @@ Small.args = {
 
 export const WithoutOutline = Template.bind({});
 WithoutOutline.args = {
-  size: 'large',
+  size: "large",
   outline: false,
   children: "Button",
   backgroundColor: "rgba(0,0,0,0)"
@@ -44,8 +44,8 @@ WithoutOutline.args = {
 
 export const BackgroundColor = Template.bind({});
 BackgroundColor.args = {
-  size: 'large',
+  size: "large",
   outline: false,
   children: "Button",
-  backgroundColor: "rgb(128,220,202)",
+  backgroundColor: "rgb(128,220,202)"
 };

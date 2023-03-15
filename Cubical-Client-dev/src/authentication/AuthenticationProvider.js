@@ -1,4 +1,4 @@
-import { CubicalLogo } from "../icons";
+import { TomLogo } from "../icons";
 import LoginPage from "./LoginPage/LoginPage";
 import { useStyles } from "./Authentication.style";
 import { CodesContextProvider } from "../context/codesContext";
@@ -33,7 +33,7 @@ const AuthenticationProvider = ({ children }) => {
               case AuthState.InProgress:
                 return (
                   <div className={classes.root}>
-                    <CubicalLogo className={classes.logo} />
+                    <TomLogo className={classes.logo} />
                   </div>
                 );
 
