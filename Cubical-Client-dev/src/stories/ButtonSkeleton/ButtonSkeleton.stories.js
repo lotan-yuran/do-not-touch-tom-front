@@ -1,7 +1,7 @@
 import { ButtonSkeleton } from "./ButtonSkeleton";
 
 export default {
-  title: "Cubical/ButtonSkeleton",
+  title: "Tom/ButtonSkeleton",
   component: ButtonSkeleton,
   argTypes: {
     color: { control: "color" },

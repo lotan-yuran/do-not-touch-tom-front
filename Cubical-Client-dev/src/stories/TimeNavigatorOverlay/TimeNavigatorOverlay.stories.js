@@ -1,7 +1,7 @@
 import { TimeNavigatorOverlay } from "./TimeNavigatorOverlay";
 
 export default {
-  title: "Cubical/TimeNavigatorOverlay",
+  title: "Tom/TimeNavigatorOverlay",
   component: TimeNavigatorOverlay
 };
 
