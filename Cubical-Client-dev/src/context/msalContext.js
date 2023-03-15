@@ -33,17 +33,6 @@ export const MsalProvider = ({ children, request, forceLogin = false, handleErro
         getServiceType(username.substring(0, 9))
       ]);
 
-      // if (
-      //   ![
-      //     ...serviceTypes.HOVA,
-      //     ...serviceTypes.KEVA,
-      //     ...serviceTypes.MILOEEM,
-      //     ...serviceTypes.AHAZIM
-      //   ].includes(serviceType)
-      // ) {
-      //   logout();
-      // }
-
       setUser({ serviceType, name, username, id: username.substring(0, 9), phone: userPhone.phone });
       setAuthState(AuthState.Authenticated);
     } catch (e) {
