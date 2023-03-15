@@ -1,0 +1,27 @@
+.date-picker-query {
+    top: 92px;
+    height: 32px;
+    font-size: 23px;
+    font-weight: 700;
+    color: #555555;
+    border-width: 0px;
+    margin-right: 13px;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+.skeleton {
+    width: 100%;
+    height: 110px;
+    background-color:rgba(68, 68, 68, 0.11);
+    animation: pulse 1s ease-in-out 0.5s infinite;
+  }
+
+@keyframes pulse {
+    0%, 100% {
+      background-color:rgba(68, 68, 68, 0.11);
+    }
+    50% {
+      background-color: rgba(207, 207, 207, 0.11);
+    }
+  }

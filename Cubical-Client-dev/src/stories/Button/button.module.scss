@@ -1,0 +1,80 @@
+@import "../../styles/colors.scss";
+
+.button-base {
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  outline: none;
+  direction: rtl;
+  color:  $text;
+  background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Heebo Bold', 'Heebo Regular', 'Heebo', sans-serif;
+}
+.button-base:hover {
+  background-color: transparent;
+}
+.button-base:disabled {
+  cursor: default;
+  color: $text-disabled;
+}
+.button-base--circle { 
+  border-radius: 3em;
+}
+.button-base--square { 
+  border-radius: 4px;
+}
+.button-base--full-square { 
+  border-radius: 0px;
+}
+.button-base--outline { 
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+}
+.button-base--full-width {
+  width: 100%;
+}
+.button-base--skeleton {
+  color: transparent !important;
+
+  animation: pulse 1.5s ease-in-out 0.5s infinite !important;
+}
+.button-base--not-display {
+  display: none;
+}
+.button-base--xx-small {
+  font-size: 11px;
+  padding: 5px 8px;
+  font-weight: 400;
+}
+.button-base--x-small {
+  font-size: 12px;
+  padding: 5px 10px;
+  font-weight: 400;
+}
+.button-base--small {
+  font-size: 12px;
+  padding: 8px 14px;
+}
+.button-base--medium {
+  font-size: 14px;
+  padding: 9px 18px;
+}
+.button-base--large {
+  font-size: 16px;
+  padding: 12px 22px;
+}
+
+
+@keyframes pulse {
+  0%{
+    background-color:rgba(0, 0, 0, 0.11);
+  }
+  0%, 100% {
+    background-color:rgba(0, 0, 0, 0.11);
+  }
+  50% {
+    background-color: rgba(207, 207, 207, 0.11);
+  }
+}

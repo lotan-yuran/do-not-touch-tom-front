@@ -1,0 +1,27 @@
+// background color
+$dark-green: #80DCCA;
+$bright-green: "#EFFFFF";
+$hoverGreen: #54CBB6;
+$brightGreenDisabled: #EFFFFF80;
+
+
+// color 
+$text: #333333;
+$text-disabled: #33333380;
+$text-borders: #797979;
+$text-titles: #555555;
+
+//admin
+$primary-blue:  rgb(22, 155, 213);
+
+$transparent: rgba(0, 0, 0, 0);
+
+$icons-disabled: #BABABA;
+
+$admin:  (
+    "blue" : rgb(22,155,213),
+    "transparent": rgba(0, 0, 0, 0),
+    "brightGray": rgb(215, 213, 213),
+    "brightGrayDisabled": rgba(215, 213, 213, 0.5),
+);
+

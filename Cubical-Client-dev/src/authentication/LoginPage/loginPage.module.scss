@@ -1,0 +1,68 @@
+@import "../../styles/colors.scss";
+@import "../../styles/general.scss";
+
+.title {
+    padding: 10px 10px 0px 10px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    display: inherit ;
+    margin: 0 auto;
+    width: 300px;
+    color: grey;
+}
+.subtitle {
+    font-size: 28px ;
+    padding-top: 2%;
+    color: #a19d9d;
+}
+.input-label{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-right: 5%;
+    font-family: $main-font;
+}
+.input-field{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.external-link{
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 5%;
+    font-family: $main-font;
+    text-decoration: underline;
+} 
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+// Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    .login-page {
+      padding: 1.5% 5% 1.5% 5%;
+    }
+  }
+  
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) { 
+    .login-page {
+      padding: 0% 15% 3% 15%;
+    }
+  }
+  
+  // Extra large devices (large desktops, 1200px and up)
+  // @media (min-width: 1200px) { ... }

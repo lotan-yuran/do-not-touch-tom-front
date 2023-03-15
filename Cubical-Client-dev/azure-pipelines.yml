@@ -1,0 +1,146 @@
+trigger:
+- dev
+- test
+- main
+
+resources:
+- repo: self
+
+jobs:
+  - job: 'Build_Pull_Request'
+    pool:
+      vmImage: 'ubuntu-latest'
+    condition: eq(variables['Build.Reason'], 'PullRequest')
+    variables:
+    - group: WeWork-Dev
+    steps:
+    - script: echo building pull request
+    - task: NodeTool@0
+      inputs:
+        versionSpec: '12.x'
+      displayName: 'Install Node.js'
+  
+    - task: Cache@2
+      inputs:
+        key: 'npm | “$(Agent.OS)” | $(Build.SourcesDirectory)/package-lock.json'
+        path: '$(Build.SourcesDirectory)/node_modules'
+        cacheHitVar: 'NodeModulesCacheRestored'
+
+    - script: npm install
+      condition: ne(variables['NodeModulesCacheRestored'], 'true')
+      displayName: 'npm install'
+
+    - script: npm run build
+      displayName: 'npm build'
+
+  - job: 'Build_dev'
+    pool:
+      vmImage: 'ubuntu-latest'
+    condition: eq(variables['Build.SourceBranch'], 'refs/heads/dev')
+    variables:
+    - group: WeWork-Dev
+    steps:
+    - script: echo building Development
+    - task: NodeTool@0
+      inputs:
+        versionSpec: '12.x'
+      displayName: 'Install Node.js'
+      
+    - task: Cache@2
+      inputs:
+        key: 'npm | “$(Agent.OS)” | $(Build.SourcesDirectory)/package-lock.json'
+        path: '$(Build.SourcesDirectory)/node_modules'
+        cacheHitVar: 'NodeModulesCacheRestored'
+
+    - script: npm install
+      condition: ne(variables['NodeModulesCacheRestored'], 'true')
+      displayName: 'npm install'
+
+    - script: npm run build
+      displayName: 'npm build'
+
+    - task: ArchiveFiles@2
+      displayName: 'Archive files'
+      inputs:
+        rootFolderOrFile: '$(System.DefaultWorkingDirectory)/build'
+        includeRootFolder: false
+        archiveType: zip
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+        replaceExistingArchive: true
+
+    - publish: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+      artifact: Dev
+  - job: 'Build_test'
+    pool:
+      vmImage: 'ubuntu-latest'
+    condition: eq(variables['Build.SourceBranch'], 'refs/heads/test')
+    variables:
+    - group: WeWork-Test
+    steps:
+    - script: echo building Development
+    - task: NodeTool@0
+      inputs:
+        versionSpec: '12.x'
+      displayName: 'Install Node.js'
+      
+    - task: Cache@2
+      inputs:
+        key: 'npm | “$(Agent.OS)” | $(Build.SourcesDirectory)/package-lock.json'
+        path: '$(Build.SourcesDirectory)/node_modules'
+        cacheHitVar: 'NodeModulesCacheRestored'
+
+    - script: npm install
+      condition: ne(variables['NodeModulesCacheRestored'], 'true')
+      displayName: 'npm install'
+
+    - script: npm run build
+      displayName: 'npm build'
+
+    - task: ArchiveFiles@2
+      displayName: 'Archive files'
+      inputs:
+        rootFolderOrFile: '$(System.DefaultWorkingDirectory)/build'
+        includeRootFolder: false
+        archiveType: zip
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+        replaceExistingArchive: true
+
+    - publish: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+      artifact: Test
+  - job: 'Build_prod'
+    pool:
+      vmImage: 'ubuntu-latest'
+    condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
+    variables:
+    - group: WeWork-Prod
+    steps:
+    - script: echo building Development
+    - task: NodeTool@0
+      inputs:
+        versionSpec: '12.x'
+      displayName: 'Install Node.js'
+      
+    - task: Cache@2
+      inputs:
+        key: 'npm | “$(Agent.OS)” | $(Build.SourcesDirectory)/package-lock.json'
+        path: '$(Build.SourcesDirectory)/node_modules'
+        cacheHitVar: 'NodeModulesCacheRestored'
+
+    - script: npm install
+      condition: ne(variables['NodeModulesCacheRestored'], 'true')
+      displayName: 'npm install'
+
+    - script: npm run build
+      displayName: 'npm build'
+
+    - task: ArchiveFiles@2
+      displayName: 'Archive files'
+      inputs:
+        rootFolderOrFile: '$(System.DefaultWorkingDirectory)/build'
+        includeRootFolder: false
+        archiveType: zip
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+        replaceExistingArchive: true
+
+    - publish: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+      artifact: Prod 

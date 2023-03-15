@@ -1,0 +1,21 @@
+.svg-container{
+    display: flex;
+    height: 70%;
+    
+.mui-svg-icon-1 {
+    width: 76px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline;
+    position: relative;
+    z-index:5 !important;
+}
+.mui-svg-icon-2 {
+    width: 60px;
+    margin-left: auto;
+    margin-right: -24px;
+    display: inline;
+    padding-bottom: 10px;
+    z-index:1 !important;
+}
+}

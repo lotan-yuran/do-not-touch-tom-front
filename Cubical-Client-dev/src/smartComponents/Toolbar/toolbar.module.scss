@@ -1,0 +1,62 @@
+.logo{
+    font-size: 50px;
+    margin-left: 24px;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    color:  white;
+}
+.complexDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+.complexTitle {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.toolbar {
+    display: flex;
+    min-height: 64px;
+    position: relative;
+    padding-left: 24px;
+    padding-right: 24px;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+}
+.manager-settings{
+    gap: 15px;
+    // flex-wrap: wrap;
+    align-items: center;
+    display: inline-flex;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.date-navigator {
+    gap: 30px;
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+}
+.search{
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    display: inline-flex;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.drop-list {
+    margin-right: auto;
+}

@@ -1,0 +1,107 @@
+@import "../../styles/colors.scss";
+
+.pwa-dialog{
+
+    .MuiDialog-paper{
+        border-radius: 10px;
+    }
+
+    .title{
+        font-size: 16px;
+        color: $primary!important;
+        font-weight: bolder;
+        margin-top: 15px;
+    }
+
+    .sub-title{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .dialog-actions{
+        justify-content: center;
+    }
+
+    .dialog-accept-button{
+        margin-right: 20px !important;
+    }
+
+    .dialog-content{
+        text-align: center;
+    }
+    
+    .web .MuiButton-root{
+        width: 40%;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .ios .MuiButton-root{
+        width: 90%;
+        height: 35px;
+        font-size: 17px;
+    }
+
+    .pwa-icon{
+        width: 180px;
+        height: 180px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .dialog-actions{
+        margin-bottom: 10px;
+    }
+
+    .MuiIconButton-root{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        padding: 7px;
+    }
+
+    .description{
+        margin-top: 35px;
+        margin-bottom: 15px;
+    }
+
+    .description-title{
+        font-weight: bold;
+        text-align: right;
+        margin-bottom: 10px;
+    }
+
+    .step{
+        text-align: right;
+        height: 40px;
+        margin-top: 5px;
+    }
+
+    .step-description{
+        display: inline-block;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        vertical-align: middle;
+        
+        @media only screen and (max-width: 350px) {
+            width: 150px;
+        }
+        @media only screen and (min-width: 350px) and (max-width: 400px) {
+            width: 190px;
+        }
+
+        @media only screen and (min-width: 400px) {
+            width: 235px;
+        }
+    }
+
+    .ios-navigation-icon{
+        width: 20px;
+        height: 35px;
+    }
+
+    .ios-add-icon{
+        width: 20px;
+        height: 25px;
+    }
+}

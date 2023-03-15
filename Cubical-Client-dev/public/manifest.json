@@ -1,0 +1,21 @@
+{
+  "short_name": "Cubical",
+  "name": "Cubical",
+  "description": "PWA SPlash Screens",
+  "icons": [
+    {
+      "src": "/logos/maskable_icon_192.png", 
+      "sizes": "192x192",
+      "purpose": "maskable"
+
+    },
+    {
+      "src": "/logos/maskable_icon_512.png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "rgba(128, 220, 202, 0.96)"
+}

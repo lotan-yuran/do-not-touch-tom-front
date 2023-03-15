@@ -1,0 +1,57 @@
+.formControl {
+    left: auto;
+    display: none;
+}
+.icon {
+    left: 0;
+    right: auto;
+    margin-left: 10px;
+}
+.shrink {
+    z-index: 1;
+    display: block; 
+    padding: 0 10px;
+    margin-left: 87%;
+    background-color: #ffffff;
+    transform: translate(-10px, -6px) scale(0.75);
+}
+.input {
+    position: relative;
+};
+.drop-list--circle, .drop-list--circle:focus {
+    border-radius: 50px;
+};
+.drop-list--square, .drop-list--square:focus { 
+    border-radius: 6px;
+}
+.drop-list--outline {
+    border: 1px solid #ced4da;
+}
+.drop-list--xx-small {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 6px 4px 6px 30px;
+}
+.drop-list--x-small {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px 6px 8px 32px;
+}
+.drop-list--small {
+    font-size: 17px;
+    padding: 10px 8px 10px 34px;
+}
+.drop-list--medium {
+    font-size: 19px;
+    padding: 10px 8px 10px 34px;
+}
+.drop-list--large {
+    font-size: 21px;
+    padding: 10px 8px 10px 34px;
+}
+.circular-progress {
+    left: 10px;
+    color: black;
+    display: inline-flex;
+    position: absolute;
+}

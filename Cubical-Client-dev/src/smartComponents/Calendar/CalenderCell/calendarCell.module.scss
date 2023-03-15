@@ -1,0 +1,67 @@
+.day-scale-cell {
+    border-left: 1px solid rgba(183, 183, 183, 1)
+}
+.time-cell-inactive {
+    background-color: #D9D9D9;
+    // background-color: rgba(0, 0, 0, 0.04);
+    &:hover {
+        background-color: #D9D9D9;
+    }
+    &:focus {
+        background-color: #D9D9D9;
+    }
+}
+.time-cell-active {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    // background-color: rgba(255, 255, 255, 0);
+    &:hover {
+        background-color: #FFFFFF;
+    }
+    &:focus {
+        background-color: #FFFFFF;
+    }
+}
+.icon-bloke {
+    width: 15px;
+    margin-top: 8px;
+}
+.icon-text {
+    display: inline-flex;
+}
+
+.icon {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.gridContainer{
+    margin-right : 20px ;
+}
+
+.textContainer{
+    display: flex;
+    position: relative;
+    margin : 6px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    text-align: right;
+    margin : 0px 20px ;
+}
+
+.cancelButton{
+    float: left;
+}
+.not-found{
+    align-items: center;
+    display: inline-flex;
+    width: 100%;
+    justify-content:center;
+}
+
+.divider {
+    width: 100%;
+    margin-top: 10px;
+}

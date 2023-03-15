@@ -1,0 +1,122 @@
+@import "../../../styles/colors.scss";
+
+.title {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 74px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1.125px;
+    color: #555555;
+
+}
+
+.line {
+    font-family: 'Heebo Bold', 'Heebo Regular', 'Heebo', sans-serif;
+}
+
+.title-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phone-name-and-value {
+    display: flex;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: right;
+    color: #333333;
+}
+
+.phone-name {
+    margin-left: 20px;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #333333;
+
+}
+
+.info-name-and-value {
+    display: flex;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: right;
+    color: #333333;
+}
+
+.day-name {
+    margin-left: 20px;
+
+}
+
+.days {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: right;
+    color: #333333;
+}
+
+.info-name {
+    margin-left: 20px;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #333333;
+
+}
+
+.schedule-title {
+    margin-bottom: 115px;
+    margin-left: 20px;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-decoration-line: underline;
+
+    color: #333333;
+}
+
+.schedule {
+    justify-content: space-between;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+
+    color: #333333;
+}

@@ -1,0 +1,10 @@
+.grid {
+    margin: 8px;
+}
+.grid-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+.grid-button {
+    margin: 8px 0px;
+}

@@ -1,0 +1,45 @@
+trigger: none
+
+resources:
+  - repo: self
+
+jobs:
+  - job: "Build_Pull_Request_To_Dev"
+    pool:
+      vmImage: "ubuntu-latest"
+    variables:
+      - group: WeWork-Dev
+      - name: REACT_APP_REDIRECT_URL
+        value: https://cubicaldemo$(System.PullRequest.PullRequestId).z6.web.core.windows.net
+
+    steps:
+      - script: echo building pull request
+      - task: NodeTool@0
+        inputs:
+          versionSpec: "12.x"
+        displayName: "Install Node.js"
+
+      - task: Cache@2
+        inputs:
+          key: "npm | “$(Agent.OS)” | $(Build.SourcesDirectory)/package-lock.json"
+          path: "$(Build.SourcesDirectory)/node_modules"
+          cacheHitVar: "NodeModulesCacheRestored"
+
+      - script: npm install
+        condition: ne(variables['NodeModulesCacheRestored'], 'true')
+        displayName: "npm install"
+
+      - script: npm run build
+        displayName: "npm build"
+
+      - task: ArchiveFiles@2
+        displayName: "Archive files"
+        inputs:
+          rootFolderOrFile: "$(System.DefaultWorkingDirectory)/build"
+          includeRootFolder: false
+          archiveType: zip
+          archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+          replaceExistingArchive: true
+
+      - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+        artifact: PullRequestToDev

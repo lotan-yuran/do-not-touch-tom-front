@@ -1,0 +1,56 @@
+@import "../../styles/colors.scss";
+
+.button-date-picker {
+  font-weight: 700;
+  border: 0;
+  border-radius: 3em 3em 0 0;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  outline: none;
+  direction: rtl;
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Heebo Bold', 'Heebo Regular', 'Heebo', sans-serif;
+}
+.button-date-picker:disabled {
+  color: $text-disabled;
+}
+.button-date-picker--accented {
+  font-weight: 700;
+}
+.button-date-picker--not-accented {
+  font-weight: 400;
+}
+.button-date-picker--small {
+  padding: 3px 13px;
+}
+.button-date-picker--medium {
+  padding: 4px 16px;
+}
+.button-date-picker--large {
+  padding: 5px 19px;
+}
+.one-label-small {
+  font-size: 12px;
+  margin: 7px 0;
+}
+.one-label-medium {
+  font-size: 14px;
+  margin: 7px 0;
+}
+.one-label-large {
+  font-size: 16px;
+  margin: 7px 0;
+}
+.two-label-small {
+  font-size: 12px;
+  margin: 7px 0;
+}
+.two-label-medium {
+  font-size: 14px;
+  margin: 7px 0;
+}
+.two-label-large {
+  font-size: 16px;
+  margin: 7px 0;
+}

@@ -1,0 +1,20 @@
+.buttons {
+    padding: 15px 25px;
+    justify-content: space-between;
+}
+.button-only {
+    width: 60%;
+    margin: auto;
+    display: block !important;
+}
+.button {
+    min-width: 40%;
+}
+.close-button {
+    top: 9px;
+    left: 5px;
+    position: absolute !important;
+}
+.title-dialog {
+    text-align: right;
+}

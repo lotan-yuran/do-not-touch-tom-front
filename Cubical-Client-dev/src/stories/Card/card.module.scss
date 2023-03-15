@@ -1,0 +1,35 @@
+@import "../../styles/colors.scss";
+.card-base {
+  border: 0;
+  border-radius: 8px;
+  outline: none;
+  direction: rtl;
+  color:  $text;
+  background-color: transparent;
+  padding:10px 15px;
+}
+.card-base--outline { 
+  box-shadow: rgba(196, 196, 196, 0.788) 0px 0px 0px 1px inset;
+}
+.card-base--center { 
+    margin: 0 auto;
+}
+.card-base--centerContent { 
+    display: flex;
+    justify-content: center;
+}
+.card-base--width-100 {
+    width:100%;
+}
+.card-base--width-90 {
+    width:90%;
+}
+.card-base--width-85 {
+    width:85%;
+}
+.card-base--width-80 {
+    width:80%;
+}
+.card-base--width-50 {
+    width:50%;
+}

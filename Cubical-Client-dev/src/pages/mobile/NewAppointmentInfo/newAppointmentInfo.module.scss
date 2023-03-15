@@ -1,0 +1,77 @@
+.page {
+  margin: 40px 0 70px 0;
+  background-color: #fff;
+}
+
+.title {
+  height: 32px;
+  font-size: 23px;
+  margin: 0px 5px;
+  font-weight: 700;
+  color: #555555;
+  border-width: 0px;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+.character-counter{
+  font-size: 12px !important;
+}
+
+.button-group {
+  text-align: center;
+  width: 100%;
+  Button:first-child {
+    border-radius: 0 2.4rem 2.4rem 0 !important;
+  }
+  Button:last-child {
+    border-radius: 2.4rem 0 0 2.4rem !important;
+  }
+}
+
+.button-content{
+  width: 110px;
+  height: 110px;
+  padding: 5px 10px;
+}
+
+// XX Small devices (phones, 300px and down)
+@media (max-width: 300px) { 
+  .button-content {
+    width: 80px;
+    height: 80px;
+  }
+ }
+
+ // X Small devices (phones, 350px and down)
+@media (max-width: 350px) { 
+  .button-content {
+    width: 90px;
+    height: 90px;
+  }
+ }
+
+  // Small devices (phones, 410px and down)
+@media (max-width: 410px) { 
+  .button-content {
+    width: 90px;
+    height: 90px;
+  }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+  .page {
+    padding: 1.5% 5% 1.5% 5%;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+  .page {
+    padding: 3% 10% 3% 10%;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }

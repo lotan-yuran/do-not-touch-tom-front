@@ -1,0 +1,43 @@
+@import "../../styles/colors.scss";
+
+.paper {
+    min-width: 400px;
+    padding: 15px 20px;
+}
+.button-save {
+    float: left;
+}
+.line {
+    font-family: 'Heebo Bold', 'Heebo Regular', 'Heebo', sans-serif;
+}
+.line-dates {    
+    width: 100%;
+    display: flex;
+    align-items: center
+}
+.text-inactive {
+    font-size: x-small;
+    color: rgb(231, 136, 136);
+}
+.transparent-text {
+    height: 10px;
+}
+.hyphen {
+    width: 20%;
+    margin-top: 0;
+    font-weight: 400;
+    line-height: 2.43;
+    text-align: center;
+    font-size: 0.875rem;
+    letter-spacing: 0.01071em;
+    // font-family: `"Roboto", "Helvetica", "Arial", "sans-serif"`
+}
+.switchBase {
+    color: $primary-blue;
+    &.checked {
+      color: $primary-blue;
+    };
+    &.checked + .track {
+      background-color: $primary-blue;
+    };
+}

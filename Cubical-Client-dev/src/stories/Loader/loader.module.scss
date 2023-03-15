@@ -1,0 +1,7 @@
+@import "../../styles/colors.scss";
+
+.progress {
+    color: $dark-green;
+    margin-top: calc(35vh - 20px);
+    margin-right: calc(50% - 20px);
+}

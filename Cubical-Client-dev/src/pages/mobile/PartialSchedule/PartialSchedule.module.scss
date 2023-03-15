@@ -1,0 +1,82 @@
+@import "../../../styles/colors.scss";
+@import "../../../styles/screenSize.scss";
+
+.created-appointment-container {
+  text-align: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  margin-top: 10vh;
+}
+
+.title{
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.approve-button{
+  width:300px;
+  height:40px;
+  border-radius:21px;
+  text-align: center;
+  background-color:$dark-green;
+  margin-left:10px
+}
+
+.cancel-button{
+  width:300px;
+  height:40px;
+  border-radius:21px;
+  text-align: center;
+  border: 2px solid $hoverGreen;
+  color:$hoverGreen;
+}
+
+.appointment-hours{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.display-flex{
+  display: flex;
+  justify-content:space-around;
+}
+
+.info {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.href{
+  color:black !important
+}
+
+.buttons {
+  margin-top: 25px;
+}
+
+.button {
+    display:inline;
+    margin: 0px 3%;
+}
+
+// Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: $medium-screen) { 
+  .created-appointment-container {
+    padding: 1.5% 5% 1.5% 5%;
+  }
+}
+  
+// Large devices (desktops, 992px and up)
+@media (min-width: $big-screen) { 
+  .created-appointment-container {
+    padding: 3% 10% 3% 10%;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }

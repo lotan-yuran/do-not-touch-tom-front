@@ -1,0 +1,88 @@
+@import "../../../styles/colors.scss";
+
+.disable-title {
+
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #333333;
+}
+
+.disable-second-title {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #333333;
+}
+
+.disable-date-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.disable-start-date {
+    margin-left: 20px;
+}
+
+.disable-future {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #333333;
+
+}
+
+.disable-future-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-left: 20px;
+}
+
+.add-disable-button {
+    height: 30px;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    margin-right: 20px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.689426px;
+    background: #4EC4F7;
+    border-radius: 3.77143px;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 0.689426px;
+}
+
+
+.disable-future-value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.delete-disable-btn {
+    margin-right: 20px;
+}

@@ -1,0 +1,20 @@
+.buttons-time {
+    font-size: 25px;
+    text-align: center;
+}
+.button-time {
+    border: 0;
+    outline: none;
+    line-height: 1;
+    direction: rtl;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 8px 5px;
+    color: #5f5e5e;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Heebo Bold', 'Heebo Regular', 'Heebo', sans-serif;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.04); 
+    }
+}

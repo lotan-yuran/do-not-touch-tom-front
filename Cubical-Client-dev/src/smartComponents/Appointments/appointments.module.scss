@@ -1,0 +1,52 @@
+.appointments-container{
+  padding: 0% !important;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.grid-container {
+  display: grid !important;
+  grid-row-gap: 3px;
+  grid-template-columns: 50% 5% 45%;
+  width: 100%;
+  height: fit-content;
+   margin: 0px 5px;
+}
+  
+.grid-item {
+  width: auto;
+   height: fit-content;
+}
+
+.vl{
+  border-left: 1px solid #bdbdbd;
+  height: 100%;
+ }
+
+.centered{
+  justify-self: center;
+  text-align: center;
+  align-self: center;
+}
+
+.card-skeleton {
+  height: 18px;
+  background-color:rgba(68, 68, 68, 0.11);
+  animation: pulse 1s ease-in-out 0.5s infinite;
+  margin-bottom: 5px;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    background-color:rgba(68, 68, 68, 0.11);
+  }
+  50% {
+    background-color: rgba(207, 207, 207, 0.11);
+  }
+}

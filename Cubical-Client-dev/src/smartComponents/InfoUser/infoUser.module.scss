@@ -1,0 +1,32 @@
+.divAvatar {
+    width: 100px;
+}
+
+.avatar {
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.person {
+    width: 100px;
+}
+
+.avatar:active {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #719dff;
+}
+
+.root {
+    top: 53px;
+    width: 12%;
+    left: 10px;
+    right: auto;
+    z-index: 10000;
+    border-width: 1px;
+    position: absolute;
+    border-style: solid;
+    border-color: #e0e0e0;
+    background-color: #ffffffed;
+}

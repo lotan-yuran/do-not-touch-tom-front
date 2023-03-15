@@ -1,0 +1,14 @@
+.time-picker {
+  height: 40px;
+  display: grid;
+   grid-template-columns: auto 115px auto auto;
+}
+.time-picker > p {
+  margin: auto 5px;
+}
+.text-error {
+  margin: 0;
+  color: red;
+  font-weight: 500;
+  font-size: x-small;
+}

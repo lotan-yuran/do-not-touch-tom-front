@@ -1,0 +1,62 @@
+@import "../../styles/colors.scss";
+
+.section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.data-manager {
+    overflow-y: scroll;
+}
+
+.paper {
+    min-width: 400px;
+    padding: 15px 20px;
+}
+
+.button-save {
+    float: left;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-right: 330px;
+}
+
+.approve-btn {
+
+    background: #4EC4F7;
+    border-radius: 7.71429px;
+
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20.5714px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1.41019px;
+
+    color: #FFFFFF;
+}
+
+.cancel-btn {
+
+    background: #FFFFFF;
+    border: 1.28571px solid #ACACAC;
+    border-radius: 7.71429px;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20.5714px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1.41019px;
+    color: #4EC4F7;
+}

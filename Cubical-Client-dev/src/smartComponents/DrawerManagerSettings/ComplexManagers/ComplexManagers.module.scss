@@ -1,0 +1,48 @@
+@import "../../../styles/colors.scss";
+
+.add-manager-input {
+    align-self: center;
+    align-items: center;
+}
+
+.add-manager-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 230px;
+}
+
+.managers-title {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-decoration-line: underline;
+
+    color: #333333;
+}
+
+
+.manager-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 120px;
+}
+
+
+
+.manager-id {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.delete-manager-btn {
+    margin-right: 20px;
+}

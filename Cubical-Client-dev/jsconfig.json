@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "jsx": "react",
+    "paths": {
+      "@Config/*": ["src/config/*"],
+      "@Constants/*": ["src/constants/*"],
+      "@Context/*": ["src/context/*"],
+      "@Hooks/*": ["src/hooks/*"],
+      "@Icons/*": ["src/icons/*"],
+      "@Pages/*": ["src/pages/*"],
+      "@Services/*": ["src/services/*"],
+      "@Stories/*": ["src/stories/*"],
+      "@Styles/*": ["src/styles/*"],
+      "@Utilities/*": ["src/utilities/*"]
+    }
+  }
+}
+

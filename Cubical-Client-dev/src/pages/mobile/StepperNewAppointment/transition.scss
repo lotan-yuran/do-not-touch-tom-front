@@ -1,0 +1,47 @@
+.right-enter, .right-exit, .left-enter, .left-exit {
+    transition: transform 500ms ease-out;
+  }
+  
+  .right-enter-active {
+    top: 0;
+    left: 0;
+    position: relative;
+    transform: translateX(100%);
+  }
+
+  .left-enter-active {
+    top: 0;
+    left: 0;
+    position: relative;
+    transform: translateX(-100%);
+  }
+  
+  .right-enter, .left-enter {
+    transform: translateX(0%);
+  }
+  
+  .right-exit, .left-exit {
+    transform: translateX(0%);
+  }
+  
+  .right-exit-active {
+    left: 8px;
+    top: -23px;
+    right: 8px;
+    position: fixed;
+    transform: translateX(-120%);
+  }
+
+  .left-exit-active {
+    left: 8px;
+    top: -23px;
+    right: 8px;
+    position: fixed;
+    transform: translateX(120%);
+  }
+
+  @media (min-width: 768px) { 
+    .right-enter, .right-exit, .left-enter, .left-exit {
+      transition: transform 1000ms ease-out;
+    }
+  }
