@@ -92,11 +92,12 @@ export const Appointments = ({ loading, appointments, setAppointments, canBeCanc
         <div>
           מתחם {appointment["Station.Complex.name"]} <br />
         </div>
-        {user.id !== appointment["user_info"].id && (
+        {/* todo : remove comment*/}
+        {/* {user.id !== appointment["user_info"].id && (
           <div>
             עבור {appointment["user_info"].fullName} <br />
           </div>
-        )}
+        )} */}
         יום {weekdaysShort[new Date(appointment["start_datetime"]).getDay()]} {getDate(appointment)}
         <br />
         {getHourSpan(appointment)}
