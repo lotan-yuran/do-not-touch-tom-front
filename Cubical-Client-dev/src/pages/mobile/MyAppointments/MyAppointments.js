@@ -70,12 +70,14 @@ export default function MyAppointments() {
           {
             <Appointments
               loading={loading}
-              appointments={appointments.filter(item => isFutureDate(item.start_datetime))}
+              appointments={appointments}
+              // appointments={appointments.filter(item => isFutureDate(item.start_datetime))}
               setAppointments={setAppointments}
               canBeCanceled={true}
             />
           }
-          <div className={classes.prevOrders}>
+
+          {/* <div className={classes.prevOrders}>
             <Typography classes={{ root: clsx(classes.title, classes.myAppointmentsTitle) }}>
               הזמנות קודמות
             </Typography>
@@ -91,7 +93,7 @@ export default function MyAppointments() {
               setAppointments={setAppointments}
               canBeCanceled={false}
             />
-          )}
+          )} */}
           <FixedBottomButton
             id={COMPONENT_IDS.CUSTOMER.BUTTONS.NEW_ORDER}
             isDisabled={loading}
