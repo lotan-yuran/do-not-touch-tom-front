@@ -14,15 +14,15 @@ export const routes = [
     protected: false
   },
   {
-    path: "/admin",
-    component: <AppointmentManagement />,
-    exact: true,
-    protected: true
-  },
-  {
     path: "/created-appointment",
     component: <CreatedAppointment />,
     exact: true,
     protected: false
   }
+  // {
+  //   path: "/admin",
+  //   component: <AppointmentManagement />,
+  //   exact: true,
+  //   protected: true
+  // },
 ];

@@ -47,7 +47,6 @@ import { isFutureDate } from "../../utilities/date";
 
 //context
 import { useCodes } from "../../context/codesContext";
-import { set } from "lodash";
 
 export const Calendar = () => {
   const [date, setDate] = useState(new Date());
